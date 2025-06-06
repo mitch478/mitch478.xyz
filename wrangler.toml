@@ -1,0 +1,9 @@
+[build]
+command = "npm run build"
+publish = ".next"
+
+[build.upload]
+format = "service-worker"
+
+[site]
+bucket = ".next" 
