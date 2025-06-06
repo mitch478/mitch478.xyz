@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -39,7 +40,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
-            I'm Nathan Mitchell, from South Wales, United Kingdom. I've worked in technoology since I was 16 years old. I'm currently running a company called MCS provivding IT services to small medium businesses. 
+            I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I&apos;ve worked in technology since I was 16 years old. I&apos;m currently running a company called MCS providing IT services to small medium businesses. 
           </p>
         </div>
 
@@ -71,6 +72,16 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Navigation Section */}
+        <div className="mt-8">
+          <Link 
+            href="/contact" 
+            className="text-gray-600 hover:text-gray-900"
+          >
+            Contact
+          </Link>
         </div>
       </div>
     </main>
