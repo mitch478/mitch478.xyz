@@ -1,3 +1,10 @@
+name = "mitch478-xyz"
+compatibility_date = "2025-08-15"
+main = "workers-site/index.js"
+
 [build]
 command = "npm run build"
-publish = "out" 
+cwd = "./"
+
+[site]
+bucket = "out" 

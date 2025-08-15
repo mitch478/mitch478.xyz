@@ -5,10 +5,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Optimize for Cloudflare Pages
-  experimental: {
-    optimizeCss: true,
-  },
   // Ensure consistent routing for CF Pages
   assetPrefix: '',
   // Disable server-side features for static export
