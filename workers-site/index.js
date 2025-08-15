@@ -33,22 +33,28 @@ async function handleEvent(event) {
    * by configuring the function `mapRequestToAsset`
    */
   options.mapRequestToAsset = req => {
-    // First let the normal asset handler try to serve the file
-    if (req.url.includes('.')) {
-      // If it's a file with extension, serve it directly
+    const url = new URL(req.url)
+    const pathname = url.pathname
+    
+    // If it's a static file (has extension), serve it directly
+    if (pathname.includes('.') && !pathname.endsWith('.html')) {
       return req
     }
     
-    // For routes without extensions, try to serve index.html
-    // This enables client-side routing for Next.js
-    const normalizedUrl = new URL(req.url)
-    if (normalizedUrl.pathname.endsWith('/')) {
-      normalizedUrl.pathname = normalizedUrl.pathname + 'index.html'
-    } else {
-      normalizedUrl.pathname = normalizedUrl.pathname + '/index.html'
+    // Handle root path
+    if (pathname === '/') {
+      return new Request(`${url.origin}/index.html`, req)
     }
     
-    return new Request(normalizedUrl.toString(), req)
+    // Handle paths that should map to HTML files
+    if (pathname.endsWith('/')) {
+      // Remove trailing slash and add index.html
+      const newPath = pathname.slice(0, -1) + '/index.html'
+      return new Request(`${url.origin}${newPath}`, req)
+    } else {
+      // Add /index.html to the path
+      return new Request(`${url.origin}${pathname}/index.html`, req)
+    }
   }
 
   try {
