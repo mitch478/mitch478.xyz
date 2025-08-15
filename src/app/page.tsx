@@ -44,11 +44,11 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Projects Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        {/* Companies Section */}
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Companies</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Project Card 1 */}
+            {/* Company Card 1 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Mitchell Property Solutions LTD</h3>
               <p className="text-gray-600 mb-4">
@@ -60,7 +60,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Project Card 2 */}
+            {/* Company Card 2 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">MCS</h3>
               <p className="text-gray-600 mb-4">
@@ -69,6 +69,35 @@ export default function Home() {
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Est 2023</span>
                 <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Technology</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Side Projects Section */}
+        <div className="bg-white rounded-2xl shadow-xl p-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Side Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Side Project Card 1 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
+              <p className="text-gray-600 mb-4">
+                This website built with Next.js and deployed on Cloudflare Pages. Features a clean, responsive design showcasing my professional background.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Next.js</span>
+                <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">Cloudflare</span>
+              </div>
+            </div>
+
+            {/* Side Project Card 2 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Coming Soon</h3>
+              <p className="text-gray-600 mb-4">
+                More exciting projects are in development. Stay tuned for updates on my latest technical endeavors and experiments.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">In Development</span>
               </div>
             </div>
           </div>
