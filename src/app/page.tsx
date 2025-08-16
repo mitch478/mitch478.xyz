@@ -10,16 +10,16 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="relative w-48 h-48 rounded-full overflow-hidden">
               <Image
-                src="/profile-photo.jpg"
+                src="/profilepic.jpg"
                 alt="Profile Photo"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
             </div>
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Nathan Mitchell</h1>
-              <p className="text-xl text-gray-600 mb-4">IT Systems Engineer</p>
+              <p className="text-xl text-gray-600 mb-4">Techy, Property Developer, Business Owner</p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a href="https://github.com/mitch478" className="text-gray-600 hover:text-gray-900">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -52,7 +52,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Mitchell Property Solutions LTD</h3>
               <p className="text-gray-600 mb-4">
-                A property management company that I started in 2019. We buy run down properties and renovate them to a high standard. Based in South Wales. 
+                A property development company that I started in 2019. We buy and renovate properties to a high standard. Based in South Wales. 
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Est 2019</span>
@@ -64,7 +64,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">MCS</h3>
               <p className="text-gray-600 mb-4">
-                A IT Service Provider that I started in 2023. We provide IT services to small and medium sized businesses. Based in South Wales.
+                A IT Service Provider that I started in 2023. Providing IT solutions to small and medium sized businesses. Based in South Wales.
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Est 2023</span>
@@ -75,14 +75,14 @@ export default function Home() {
         </div>
 
         {/* Side Projects Section */}
-        <div className="bg-white rounded-2xl shadow-xl p-8">
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Side Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Side Project Card 1 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
               <p className="text-gray-600 mb-4">
-                This website built with Next.js and deployed on Cloudflare Pages. Features a clean, responsive design showcasing my professional background.
+                This website built with Next.js and deployed on Cloudflare Workers. Features a clean, responsive design showcasing my professional background.
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">Next.js</span>
@@ -92,9 +92,9 @@ export default function Home() {
 
             {/* Side Project Card 2 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Coming Soon</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sharesecure.ly</h3>
               <p className="text-gray-600 mb-4">
-                More exciting projects are in development. Stay tuned for updates on my latest technical endeavors and experiments.
+                A secure file sharing platform that I built for my company. It allows my clients to share secure passwords,api keys, and other sensitive information. 
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">In Development</span>
@@ -103,6 +103,24 @@ export default function Home() {
           </div>
         </div>
 
+        {/* Technologies Section */}
+        <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Technologies & Skills</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <div className="text-3xl mb-2">☁️</div>
+              <span className="text-sm font-medium text-gray-700">Cloud</span>
+            </div>
+            <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <div className="text-3xl mb-2">🔧</div>
+              <span className="text-sm font-medium text-gray-700">DevOps</span>
+            </div>
+            <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
+              <div className="text-3xl mb-2">🛡️</div>
+              <span className="text-sm font-medium text-gray-700">Security</span>
+            </div>
+          </div>
+        </div>
         {/* Navigation Section */}
         <div className="mt-8">
           <Link 
