@@ -9,6 +9,6 @@ cwd = "./"
 [site]
 bucket = "out" 
 
-[[routes]]
-pattern = "mitch478.xyz"
-custom_domain = true
+routes = [
+  { pattern = "mitch478.xyz", custom_domain = true }
+]
