@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from 'next/link';
+import { SiNextdotjs, SiSupabase, SiCloudflare, SiTypescript } from
+  'react-icons/si';
 
 export default function Home() {
   return (
@@ -13,13 +15,13 @@ export default function Home() {
                 src="/profilepic.jpg"
                 alt="Profile Photo"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-top brightness-80 scale-120"
                 priority
               />
             </div>
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Nathan Mitchell</h1>
-              <p className="text-xl text-gray-600 mb-4">Techy, Property Developer, Business Owner</p>
+              <p className="text-xl text-gray-600 mb-4">Tech Property Investor</p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a href="https://github.com/mitch478" className="text-gray-600 hover:text-gray-900">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -40,7 +42,7 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
-            I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I&apos;ve worked in technology since I was 16 years old. I&apos;m currently running a company called MCS providing IT services to small medium businesses. 
+            I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I love all things technology,finance & property. Currently a freelance Tech support engineer. Here I share all things I build and lessons I learn.
           </p>
         </div>
 
@@ -77,10 +79,10 @@ export default function Home() {
 
         {/* Personal Projects Section */}
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Side Projects</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Personal Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Side Project Card 1 */}
-            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
+            {/* Personal Project Card 1 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow h-full">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Personal Portfolio</h3>
               <p className="text-gray-600 mb-4">
                 This website built with Next.js and deployed on Cloudflare Workers. Features a clean, responsive design showcasing my professional background.
@@ -91,16 +93,29 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Side Project Card 2 */}
-            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sharesecure.ly</h3> <a href="https://sharesecure.ly" className="text-blue-600 hover:text-blue-900">Check it out</a>
-              <br />
-              <br />
+            {/* Personal Project Card 2 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow h-full">
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-xl font-semibold text-gray-900">Sharesecure.ly</h3>
+                <a href="https://sharesecure.ly" className="text-blue-600 hover:text-blue-900 text-sm">Check it out</a>
+              </div>
               <p className="text-gray-600 mb-4">
-                A secure file sharing platform that I built for my company. It allows my clients to share secure passwords,api keys, and other sensitive information. 
+                A secure file sharing platform that I built for my company. It allows my clients to share secure passwords, api keys, and other sensitive information.
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Live</span>
+              </div>
+            </div>
+
+            {/* Personal Project Card 3 */}
+            <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow h-full">
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">Trading Desk</h3>
+              <p className="text-gray-600 mb-4">
+                Crypto management platform I've built for myself to manage my crypto portfolio & family members.
+                Connecting to Crypto Exchanges & Web 3 Wallets. Creating the all in one platform to manage your crypto portfolio.
+              </p>
+              <div className="flex gap-2">
+                <span className="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">In Development</span>
               </div>
             </div>
           </div>
@@ -111,19 +126,19 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6">Currently Learning</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-2">⚛️</div>
+              <div className="text-3xl mb-2"><SiNextdotjs className="text-black-500"/></div>
               <span className="text-sm font-medium text-gray-700">Next.js</span>
             </div>
             <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-2">🗃️</div>
+              <div className="text-3xl mb-2"><SiSupabase className="text-green-500"/></div>
               <span className="text-sm font-medium text-gray-700">Supabase</span>
             </div>
             <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-2">☁️</div>
+              <div className="text-3xl mb-2"><SiCloudflare className="text-orange-500"/></div>
               <span className="text-sm font-medium text-gray-700">Cloudflare</span>
             </div>
             <div className="flex flex-col items-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-shadow">
-              <div className="text-3xl mb-2">📘</div>
+              <div className="text-3xl mb-2"><SiTypescript className="text-blue-500"/></div>
               <span className="text-sm font-medium text-gray-700">TypeScript</span>
             </div>
           </div>
@@ -173,13 +188,8 @@ export default function Home() {
         </div>
 
         {/* Navigation Section */}
-        <div className="mt-8">
-          <Link
-            href="/contact"
-            className="text-gray-600 hover:text-gray-900"
-          >
-            Contact
-          </Link>
+        <div className="text-center text-gray-600">
+          Mitch478.xyz - 2025
         </div>
       </div>
     </main>
