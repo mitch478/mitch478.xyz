@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from 'next/link';
 import { SiNextdotjs, SiSupabase, SiCloudflare, SiTypescript } from
   'react-icons/si';
 
@@ -111,7 +110,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow h-full">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Trading Desk</h3>
               <p className="text-gray-600 mb-4">
-                Crypto management platform I've built for myself to manage my crypto portfolio & family members.
+                Crypto management platform I&apos;ve built for myself to manage my crypto portfolio &amp; family members.
                 Connecting to Crypto Exchanges & Web 3 Wallets. Creating the all in one platform to manage your crypto portfolio.
               </p>
               <div className="flex gap-2">
