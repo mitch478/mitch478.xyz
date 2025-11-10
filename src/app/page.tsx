@@ -65,7 +65,7 @@ export default function Home() {
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">MCS</h3>
               <p className="text-gray-600 mb-4">
-                Orginal plan was to start a IT Service Provider that I started in 2023. Providing IT solutions to small and medium sized businesses. Hasn't gone as planned.
+                Orginal plan was to start a IT Service Provider that I started in 2023. Providing IT solutions to small and medium sized businesses. Hasn&apos;t gone as planned.
               Now just doing freelance Tech Support. While I plan the next chapter for MCS Technologies.
               </p>
               <div className="flex gap-2">
