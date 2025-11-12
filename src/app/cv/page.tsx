@@ -216,7 +216,7 @@ export default function CVPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Professional Summary</h2>
           <p className="text-gray-600 leading-relaxed">
             As a IT Engineer with 9 years of experience in the tech industry. Starting off as a Helpdesk Engineer and working my way up to a Senior Infrastructure Engineer. Working multiple roles within the IT industry.
-            I have a track record of delivering complex projects on time and within budget. Can support business with a wide range of IT services. Below is a list of my professional experience. I'm currently looking for another contract 2 days a week can be on site or remote.
+            I have a track record of delivering complex projects on time and within budget. Can support business with a wide range of IT services. Below is a list of my professional experience. I&apos;m currently looking for another contract 2 days a week can be on site or remote.
           </p>
         </div>
 
@@ -234,7 +234,7 @@ export default function CVPage() {
               <p className="text-gray-500">August 2024 - Present</p>
             </div>
             <p className="text-gray-600 mb-3">
-              After 8 years in my IT career. I tried to launch a MSP business but it didn't work out. So I'm now back to my roots as a IT Engineer. Mainly as a freelance contractor.
+              After 8 years in my IT career. I tried to launch a MSP business but it didn&apos;t work out. So I&apos;m now back to my roots as a IT Engineer. Mainly as a freelance contractor.
             </p>
           </div>
 
@@ -388,7 +388,7 @@ export default function CVPage() {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-gray-900">Treorchy Comprehensive School</h3>
-              <p className="text-gray-600">GCSE's and BTEC Qualifications</p>
+              <p className="text-gray-600">GCSE&apos;s and BTEC Qualifications</p>
               <p className="text-gray-500 text-sm">2011-2016</p>
               <div className="mt-3">
                 <div className="mb-2">

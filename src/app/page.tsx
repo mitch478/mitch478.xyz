@@ -42,7 +42,7 @@ export default function Home() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
             I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I love all things technology,finance,business & property. Currently a freelance Tech Support Engineer. 
-            Here I share all things I build and lessons I learn. In my spare time I'm currently learning to code and build my own projects with some assist from claude. 
+            Here I share all things I build and lessons I learn. In my spare time I&apos;m currently learning to code and build my own projects with some assist from claude. 
             
             <br/><br/>For my professional experience, you can find my CV <a href="/cv" className="text-blue-600 hover:text-blue-900">here</a>.
           </p>
