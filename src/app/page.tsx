@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl font-bold text-gray-900 mb-2">Nathan Mitchell</h1>
-              <p className="text-xl text-gray-600 mb-4">Tech Property Investor</p>
+              <p className="text-xl text-gray-600 mb-4">Tech Engineer | Property Investor</p>
               <div className="flex gap-4 justify-center md:justify-start">
                 <a href="https://github.com/mitch478" className="text-gray-600 hover:text-gray-900">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -41,7 +41,10 @@ export default function Home() {
         <div className="bg-white rounded-2xl shadow-xl p-8 mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-gray-600 leading-relaxed">
-            I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I love all things technology,finance & property. Currently a freelance Tech Support Engineer. Here I share all things I build and lessons I learn.
+            I&apos;m Nathan Mitchell, from South Wales, United Kingdom. I love all things technology,finance,business & property. Currently a freelance Tech Support Engineer. 
+            Here I share all things I build and lessons I learn. In my spare time I'm currently learning to code and build my own projects with some assist from claude. 
+            
+            <br/><br/>For my professional experience, you can find my CV <a href="/cv" className="text-blue-600 hover:text-blue-900">here</a>.
           </p>
         </div>
 
@@ -51,9 +54,9 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Company Card 1 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">MPS LTD</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">MPS</h3>
               <p className="text-gray-600 mb-4">
-                A property development company that I started in 2019. Investing/Renting property in South Wales. 
+                A property development company started in 2019, investing/renting property in South Wales. 
               </p>
               <div className="flex gap-2">
                 <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">Est 2019</span>
@@ -63,7 +66,7 @@ export default function Home() {
 
             {/* Company Card 2 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">MCS</h3>
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">MCS Technologies</h3>
               <p className="text-gray-600 mb-4">
                 Orginal plan was to start a IT Service Provider that I started in 2023. Providing IT solutions to small and medium sized businesses. Hasn&apos;t gone as planned.
               Now just doing freelance Tech Support. While I plan the next chapter for MCS Technologies.
@@ -133,9 +136,9 @@ export default function Home() {
             {/* Personal Project Card 5 */}
             <div className="border border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow h-full">
               <h3 className="text-xl font-semibold text-gray-900 mb-2">MPS</h3>
-              <a href="https://mcsltd.io" className="text-blue-600 hover:text-blue-900 text-sm">Check it out</a>
+              <a href="https://mpsltd.io" className="text-blue-600 hover:text-blue-900 text-sm">Check it out</a>
               <p className="text-gray-600 mb-4">
-                Simple landing page for MPS using Vite.JS Framework, HTML, Tailwind CSS & JavaScript.
+                Simple landing page for the property development company.
               </p>
             </div>
           </div>
