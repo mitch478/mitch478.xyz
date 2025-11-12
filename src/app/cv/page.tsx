@@ -243,12 +243,12 @@ export default function CVPage() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
               <div>
                 <h3 className="text-xl font-semibold text-gray-900">Dedicated Service Desk Engineer</h3>
-                <p className="text-lg text-gray-600">SDC Technologies (via Synoptek LLC)</p>
+                <p className="text-lg text-gray-600">Contract for Manufacturing Company in South Wales</p>
               </div>
               <p className="text-gray-500">February 2025 - Present</p>
             </div>
             <p className="text-gray-600 mb-3">
-              Contracted to provide desktop support for SDC Technologies EU operations (UK & Germany),
+              Contracted to provide desktop support for EU operations (UK & Germany),
               with additional support coverage for Asia and USA regions.
             </p>
             <div className="mb-4">
