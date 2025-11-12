@@ -229,7 +229,7 @@ export default function CVPage() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
               <div>
                 <h3 className="text-xl font-semibold text-gray-900">Director</h3>
-                <p className="text-lg text-gray-600">Mitchell Cloud Solutions LTD</p>
+                <p className="text-lg text-gray-600">MCS Technologies</p>
               </div>
               <p className="text-gray-500">August 2024 - Present</p>
             </div>
